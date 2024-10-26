@@ -29,7 +29,6 @@ def server_program():
 
         reply_message = input("Type your message here (exit): ")
         if reply_message.lower() == 'exit':
-            # Send exit message to client and close the server
             conn.send(b'exit')
             print("Server is shutting down...")
             break
